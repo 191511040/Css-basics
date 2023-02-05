@@ -1,3 +1,30 @@
-h1{
+/* element selector */
+
+/* grouping selectors */
+
+h1,h2{
     color:blue
 }
+/* id selector */
+#heading{
+    color:green
+}
+/* class selector */
+.heading1{
+    color:brown;
+
+}
+div{
+    color:red;
+    background: grey;
+}
+span{
+    text-transform: uppercase;
+}
+.red{
+    color: gold;
+}
+/* css rule */
+/* selectors */
+/* declarion blocks*/
+/* declarion */
