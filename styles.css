@@ -14,16 +14,87 @@ h1,h2{
     color:brown;
 
 }
-div{
+/* div{
     color:red;
     background: grey;
-}
+    border: 1px solid black;
+} */
 span{
     text-transform: uppercase;
 }
+/* rgb-red,blue,green */
 .red{
-    color: gold;
+    color: rgb(255,0,0);
 }
+#third{
+    background: rgb(0,255,35);
+}
+/* rgba 0-1 opacity/transperency */
+#four{
+    color: rgb(100,100,100);
+    background-color: rgba(0,0,0,0.5);
+}
+#five{
+    color:#ff0000;
+    background-color: #00ff00;
+}
+
+/* units(pixels,fontsize,width,height,absolute,relative */
+#six{
+    font-size: 60px;
+    width: 400px;
+    height:150px;
+    background-color:#ff0000;
+}
+.outer{
+    width:500px;
+    height:100px;
+    background-color: #FF5733;
+}
+.inner{
+    width:50%;
+    height:50%;
+}
+/* em=relative depends on parent */
+/* 1em=16px default browser style */
+/* 1em=basevalue */
+
+/* rem=relative depends on root */
+/* 1rem=16px default browser style */
+
+.absolute{
+    font-size: 32px;
+}
+/* parent div size 10px */
+div{
+    font-size: 10px;
+}
+/* child 2em=20px */
+.relative{
+    font-size: 2em;
+}
+
+
+/* rem */
+/* now root font size is 10px */
+/* html{
+    font-size: 10px;
+} */
+/* vh-view height
+   vw-view width */
+.banner{
+    width:50vw;
+    height:50vh;
+    background-color: red;
+}
+.banner1{
+    width:100vw;
+    height:100vh;
+    background-color: blue;
+}
+
+
+
 /* css rule */
 /* selectors */
 /* declarion blocks*/
