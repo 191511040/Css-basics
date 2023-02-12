@@ -1,0 +1,455 @@
+/* element selector */
+
+/* grouping selectors */
+
+h1,h2{
+    color:blue
+}
+/* id selector */
+#heading{
+    color:green
+}
+/* class selector */
+.heading1{
+    color:brown;
+
+}
+/* div{
+    color:red;
+    background: grey;
+    border: 1px solid black;
+} */
+span{
+    text-transform: uppercase;
+}
+/* rgb-red,blue,green */
+.red{
+    color: rgb(255,0,0);
+}
+#third{
+    background: rgb(0,255,35);
+}
+/* rgba 0-1 opacity/transperency */
+#four{
+    color: rgb(100,100,100);
+    background-color: rgba(0,0,0,0.5);
+}
+#five{
+    color:#ff0000;
+    background-color: #00ff00;
+}
+
+/* units(pixels,fontsize,width,height,absolute,relative */
+#six{
+    font-size: 60px;
+    width: 400px;
+    height:150px;
+    background-color:#ff0000;
+}
+.outer{
+    width:500px;
+    height:100px;
+    background-color: #FF5733;
+}
+.inner{
+    width:50%;
+    height:50%;
+}
+/* em=relative depends on parent */
+/* 1em=16px default browser style */
+/* 1em=basevalue */
+
+/* rem=relative depends on root */
+/* 1rem=16px default browser style */
+
+.absolute{
+    font-size: 32px;
+}
+/* parent div size 10px */
+div{
+    font-size: 10px;
+}
+/* child 2em=20px */
+.relative{
+    font-size: 2em;
+}
+
+
+/* rem */
+/* now root font size is 10px */
+/* html{
+    font-size: 10px;
+} */
+/* vh-view height
+   vw-view width */
+.banner{
+    width:50vw;
+    height:50vh;
+    background-color: red;
+}
+.banner1{
+    width:100vw;
+    height:100vh;
+    background-color: blue;
+}
+.navbar{
+    background: red;
+   height:100px
+}
+/* calc function example */
+.banner{
+    min-height: calc(100vh - 100px);
+}
+/* font-family */
+/* text-align */
+/* text-indent */
+h3{
+    font-family:  Helvetica;
+    text-align: center;
+}
+/* h1{
+    font-family: verdana;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+} */
+h2{
+    text-align: right;
+}
+.textindent{
+    text-indent: 100px;
+}
+/* line height
+letter-spacing 
+word spacing
+text-transform
+text-decoration
+*/
+.one{
+    line-height: 1.5em;
+    text-decoration: underline;
+}
+.two{
+    letter-spacing:5px
+}
+.three{
+    word-spacing: 20px;
+}
+.four{
+    text-transform: uppercase;
+    text-decoration:line-through;
+}
+.boxmodel{
+    background-color: #ff0000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: green;
+    border-radius: 20px;
+}
+.margin{
+    background-color: blue;
+    margin-top: 0;
+    border:30px solid yellow;
+    border-radius: 50%;
+    margin-top: -100px;
+}
+.outline{
+    background: blue;
+    color:red;
+    outline-width: 10px;
+    padding: 10px;
+    margin-top: 120px;
+    margin-left:130px;
+    outline-width: 10px;
+    outline-style: solid;
+    outline-offset: -10px;
+}
+
+/* display example
+Block: Always starts a new line and takes full width 
+Inline: does not start in new line it takes as much space as required
+ */
+
+.block{
+    background: green;
+    color: #ff0000;
+    display: inline;
+}
+/* list style type */
+ul li{
+    margin:0;
+    padding:0;
+    list-style-type: square;
+    
+}
+ul li a{
+    text-decoration: none;
+}
+/* border-box */
+
+  
+.box1{
+    background: #ff0000;
+    color: white;
+    width:200px;
+  height:200px;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+.box2{
+    background:green;
+    color: white;
+    width:200px;
+    height:200px;
+    box-sizing: border-box;
+}
+.box3{
+    background: blue;
+    color: red;
+    width:200px;
+    height:200px;
+    padding:20px;
+    box-sizing: border-box;
+}
+.none{
+    display:none
+}
+.opacity-1{
+    opacity:1;
+}
+.opacity-0{
+    opacity: 0;
+}
+.visibility{
+    visibility: hidden;
+}
+.bigimg{
+    min-height: 100vh;
+    min-width: 100vw;
+    color: red;
+    font-size: medium;
+    background: url('./images/pexels-photo-6752597.jpeg');
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-attachment: fixed;
+   
+}
+.smallimg{
+    
+    color: red;
+    background: url('./images/pexels-photo-6752597.jpeg');
+    background-repeat: no-repeat;
+   
+}
+.mediumimg{
+    height: 400px;
+    color: red;
+    background: url('./images/pexels-photo-6752597.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+
+/*linear graident */
+.five{
+    display: flex;
+    height:150px;
+    width:150px;
+    background:linear-gradient(red,green);
+    margin: 5px;
+}
+.six{
+    margin-left: 5px;
+    display: flex;
+    height:150px;
+    width:150px;
+    background:linear-gradient(red,green);
+}
+/* float */
+.float{
+    border: 10px solid black;
+    padding:10px;
+}
+.floatsub{
+    float: right;
+}
+.floatpar{
+  clear:both;
+}
+.float1{
+float:left;
+background: red;
+height:200px;
+width:33.33%;
+}
+.float2{
+
+    float:left;
+    margin-left: 3px;
+    background: blue;
+    height:200px;
+    width:32.33%;
+}
+.float3{
+    float:right;
+    margin-left: 5px;
+    background: blue;
+    height:200px;
+    width:33.33%;
+}
+.position{
+    position: absolute;
+    left:5px;
+    right:10px;
+}
+/* media queries */
+.mediaquery{
+    background: red;
+}
+.mediatext{
+    color: blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+@media screen and (min-width:576px) {
+    .mediaquery {
+        background: green;
+    }
+    .mediatext {
+        color: red;
+        font-size: 60px;
+    }
+}
+/* zindex */
+.zindex1{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.zindex2{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:10%;
+    left:10%;
+    z-index: -1;
+}
+.zindex{
+    margin:20px;
+    width:70vw;
+    height:70vh;
+    border:10px solid red;
+    position: relative;
+
+}
+/* pseduo elements */
+.seudo::before{
+    content:"Hello";
+    font-weight: bold;
+    font-size: medium;
+    display: block;
+    color: red;
+    background:black;
+}
+.seudo::after{
+    content:"Hai";
+    font-weight: bold;
+    font-size: medium;
+    display: block;
+}
+/* child selectors */
+/* only direct parent element works with > */
+div h1{
+    text-transform: uppercase;
+}
+div>p>span{
+  text-transform: lowercase;
+}
+ 
+.firstlineselector::first-line{
+   font-weight: bold;
+}
+.firstlineselector::first-letter{
+    font-size: 3rems;
+ } 
+ /* hover selector */
+ .firstlineselector:hover{
+   color:#FF5733;
+   background: #00ff00;
+ }
+ /* visited link active selector */
+ .Generallinkselector:link{
+    color: aqua;
+ }
+ .visted:visited{
+    color: deeppink;
+ }
+ .visted:hover{
+    color: blueviolet;
+ }
+ .visted:active{
+    color: green;
+ }
+ /* transform:translate(),scale(),rotate(),skew() */
+ .transform1{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    margin-top: 90px;
+    transform: translateX(50%);
+ }
+ .transform2{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    transform: translateY(-30px);
+ }
+ .transform3{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    transform: scaleX(2)
+ }
+ .transform4{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    transform: scaleY(2)
+ }
+ .transform5{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    transform: rotateZ(135deg);
+    transform: rotateY(35deg)
+ }
+ .transform5{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background-color: #ff0000;
+    margin-left: 80px;
+    transform:skew(135deg);
+    
+ }
+/* css rule */
+/* selectors */
+/* declarion blocks*/
+/* declarion */
